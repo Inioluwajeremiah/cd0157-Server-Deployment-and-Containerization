@@ -10,3 +10,7 @@
 <!-- aws ssm put-parameter --name JWT_SECRET --overwrite --value "zxcvbnm00" --type SecureString -->
 
 <!-- aws ssm put-parameter --name JWT_SECRET --overwrite --value "myjwtsecret" --type SecureString -->
+
+<!-- aws iam create-role --role-name UdacityFlaskDeployCBKubectlRole --assume-role-policy-document "{\"Version\":\"2012-10-17\",\"Statement\":{\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"codepipeline.amazonaws.com\"},\"Action\":\"sts:AssumeRole\"}}" -->
+
+<!-- aws iam create-role --role-name UdacityFlaskDeployCBKubectlRole --assume-role-policy-document "{\"Version\":\"2012-10-17\",\"Statement\":{\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"codepipeline.amazonaws.com\"},\"Action\":\"sts:AssumeRole\"}}" -->
